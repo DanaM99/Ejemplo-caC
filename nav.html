@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="./IniciarSesion.html">Iniciar sesión</a></li>
+          <li><a href="./Registrarse.html">Registrarse</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Categorías</a>
+            <div class="dropdown-content">
+              <a href="#">Opción 1</a>
+              <a href="#">Opción 2</a>
+              <a href="#">Opción 3</a>
+            </div>
+          </li>
+          <li><a href="#">Sobre nosotros</a></li>
+        </ul>
+        
+      </nav>
+</body>
+<footer class="footer">
+  <div class="redes">
+    <ul>
+      <p>
+        <a href=""></a>
+        <i></i>
+      </p>
+      <p>
+        <a href=""></a>
+      </p>
+      <p>
+        <a href=""></a>
+      </p>
+    </ul>
+
+  </div>
+  <div>
+    <p>¿Tenés alguna consulta?</p>
+    <p>Completa los datos para recibir más información.</p>
+  </div>
+
+  <div class="container">
+    <div class="container-inputs">
+      <input type="text" name="name" id="nombre" placeholder="Ingrese su nombre" required>
+    </div>
+    <div class="container-inputs">
+      <input type="tel" name="tel" id="telefono" placeholder="Ingrese su número telefónico" required>
+    </div>
+    <div class="container-inputs">
+      <input type="email" name="mail" id="email" placeholder="Ingrese su email" required>
+    </div>
+    <div>
+      <textarea name="comentario" id="comentario" maxlength="100" minlength="10">Haga su consulta</textarea>
+    </div>
+
+  </div>
+
+
+
+  <div>
+     <form action="https://formspree.io/f/xqkvwjnz" method="post" class="Formulario">
+    <label class="datos" for="NombreUsuario">Nombre
+         <input type="Nombre" name="NombreUsuario" id="NombreUsuario" required=""> 
+        </label>
+         <label class="datos" for="Email"> Email
+            <input type="Email" name="Email" id="Email" placeholder="ejemplo@email.com" required="">
+         </label>
+         <label class="datos" for="Comentario">Comentario
+            <textarea name="ComentarioUsuario" id="Comentario" maxlength="100" minlength="10" placeholder="Ingrese un comentario"></textarea>
+         </label>
+         <input class="enviar" type="submit" value="Enviar" id="Enviar">
+    </form>
+
+    
+  </div>
+</footer>
+</html>
